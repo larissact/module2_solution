@@ -27,7 +27,7 @@ p {
   display: inline-table;
   }
 
-.menu{
+.menu1{
 	color: white;
 	width: 150px;
 	border-left: 5px solid black;
@@ -37,7 +37,7 @@ p {
 	text-align: center;
 	float:right;
 }
-.texto{
+.texto1{
 	padding-top: 2em;
 	margin:5px;
 }
