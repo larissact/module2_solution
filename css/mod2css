@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Module 2: Larissa Casanova</title>
-<style>
-
-/**24******** Base styles **********/
+/********** Base styles **********/
 * {
   box-sizing: border-box;
 }
@@ -28,79 +20,70 @@ p {
     padding: 10px;
     }
 
-#p1,#p2,#p3 {
-    height: auto;
-    position: relative;
+.p1,.p2,.p3 {
+	background-color: #999999;
+	border: 5px solid #000000;
+	margin: 5px;
+  display: inline-table;
   }
 
-#pi1,#pi2,#pi3 {
-  position: absolute;
-  right: 0 ;
-  top: 0;
-  width: 100;
-  height: 70;
-    border: 1px solid black;
-    background-color: blue;
-  }
+.menu{
+	color: white;
+	width: 150px;
+	border-left: 5px solid black;
+	border-bottom: 5px solid black;
+	border-top:0px;
+	border-right: 0px;
+	text-align: center;
+	float:right;
+}
+.texto{
+	padding-top: 2em;
+	margin:5px;
+}
+#chicken{
+	background-color: #efb8e1;
+	color:black;
+}
+#beef{
+	background-color: maroon;
+}
+#sushi{
+	background-color: #e0d46d;
+	color: black;
+}
+
 body {
     background-color: white;
+    text-align: center;
   }
 
 
   /********** Tablet devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-#p1,#p2 {
-    width: 45% ; 
-  }
+	.p1, .p2 {
+		display: inline-table;
+		width: 45%		
+	}
 
-#p3 {
-    clear: both;
+	.p3 {
+		display:block;
+		width:93%;
+		margin:5px;
+		margin-left: auto;
     margin-right: auto;
-    margin-left: auto;
-    width: 100%
-  }
-  
-  }  
+	}		
+}
 /********** Desktop devices only **********/
 @media (min-width: 992px) and (max-width: 2500px) {
-
-#p1,#p2,#p3 {
-  float: left;
-    width: 33% ; 
-    position: relative;}
-
+	.p1, .p2, .p3 {
+		width: 30%; 
+	}
 }
 
-
-}
 /********** Mobile devices only **********/
 @media  (max-width: 767px) {
-  #p1,#p2,#p3 {
-    position: relative;
-    clear: both ;
-    float: left;
-    height: auto;
-    border: 1px solid black;
-    background-color: gray;
-    padding: 10px;
-    width: 100% ; 
+	.p1,.p2, .p3{
+		display: block;
   }  
 }
-
-</style>
-</head>
-
-<body>
-<h1>Our Menu</h1>
-<div>
-   <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.
-  </p><div id="pi1">Chicken</div> 
- </div>
-
- <div>
-  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
-  <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
- 
-</div>
-</body>
-</html>
