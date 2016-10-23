@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 2: Larissa Casanova</title>
+<style>
+
+/**24******** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 { font-family: arial; font-size: 2.2em; text-align: center; color: #660033; 
+  margin-bottom: 15px;
+}
+div {
+  background-color: #00ffff
+    float: left;
+    position: relative;
+}
+
+p {
+    float: left;
+    height: auto;
+    border: 1px solid black;
+    background-color: gray;
+    margin-left: 2px;
+    padding: 10px;
+    }
+
+#p1,#p2,#p3 {
+    height: auto;
+    position: relative;
+  }
+
+#pi1,#pi2,#pi3 {
+  position: absolute;
+  right: 0 ;
+  top: 0;
+  width: 100;
+  height: 70;
+    border: 1px solid black;
+    background-color: blue;
+  }
+body {
+    background-color: white;
+  }
+
+
+  /********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+#p1,#p2 {
+    width: 45% ; 
+  }
+
+#p3 {
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%
+  }
+  
+  }  
+/********** Desktop devices only **********/
+@media (min-width: 992px) and (max-width: 2500px) {
+
+#p1,#p2,#p3 {
+  float: left;
+    width: 33% ; 
+    position: relative;}
+
+}
+
+
+}
+/********** Mobile devices only **********/
+@media  (max-width: 767px) {
+  #p1,#p2,#p3 {
+    position: relative;
+    clear: both ;
+    float: left;
+    height: auto;
+    border: 1px solid black;
+    background-color: gray;
+    padding: 10px;
+    width: 100% ; 
+  }  
+}
+
+</style>
+</head>
+
+<body>
+<h1>Our Menu</h1>
+<div>
+   <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.
+  </p><div id="pi1">Chicken</div> 
+ </div>
+
+ <div>
+  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+  <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+ 
+</div>
+</body>
+</html>
